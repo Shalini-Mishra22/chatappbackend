@@ -27,7 +27,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")//connection establishment
-                .setAllowedOrigins(AppConstants.FRONT_END_BASE_URL)
+                .setAllowedOrigins(AppConstants.FRONT_END_BASE_URLS)
                 .withSockJS();
     }
     // /chat endpoint par connection apka establish hoga
