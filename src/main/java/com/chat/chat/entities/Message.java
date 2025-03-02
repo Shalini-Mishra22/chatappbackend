@@ -16,7 +16,7 @@ public class Message {
     private String sender;
     private String content;
     private LocalDateTime timeStamp;
-    private boolean deleted = false; // Soft delete flag
+
     public Message(String sender, String content) {
         this.sender = sender;
         this.content = content;
